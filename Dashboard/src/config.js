@@ -1,5 +1,5 @@
-export const REPORTING_API = 'http://200.69.13.70:5009'
-export const AGGREGATOR_API = 'http://200.69.13.70:5008'
+export const REPORTING_API = import.meta.env.VITE_REPORTING_API
+export const AGGREGATOR_API = import.meta.env.VITE_AGGREGATOR_API
 
 export const SUPABASE_COLLECTOR_DEVICE_ID = 'supabase-collector'
 export const FORTNITE_COLLECTOR_DEVICE_ID = 'fortnite-island'
