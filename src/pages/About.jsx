@@ -125,7 +125,7 @@ export default function About() {
         />
         <p>
           The full original codebase (collectors, both APIs, Docker setup) is preserved at the{' '}
-          <A href={ORIGINAL_CODE_URL}>v1-original tag on GitHub</A>.
+          <A href={ORIGINAL_CODE_URL}>last commit before the rework</A> on GitHub.
         </p>
       </Section>
     </Page>
