@@ -2,7 +2,7 @@
 
 A live Fortnite island metrics dashboard. It started as a group project for the Context of the Code module (Immersive Software Engineering, UL, Spring 2026).
 
-The original system ran on a university VM. It used four collectors, a Redis upload queue, two FastAPI services, Postgres and a React dashboard. That code is preserved at [this commit](https://github.com/matthewb62/ContextOfTheCode/tree/2c53c176667d0a966fca8b9247830b1868ec013d) tag.
+The original system ran on a university VM. It used four collectors, a Redis upload queue, two FastAPI services, Postgres and a React dashboard. That code is preserved at [this commit](https://github.com/matthewb62/ContextOfTheCode/tree/2c53c176667d0a966fca8b9247830b1868ec013d).
 
 This version is cut down so it can run for free on Vercel:
 
