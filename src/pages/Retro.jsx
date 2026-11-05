@@ -65,7 +65,7 @@ export default function Retro() {
 
       <Section title="The presentation">
         <p>
-          We finished with the second highest grade in the class, scoring 5/5 for meeting the brief
+          We finished with an A2, the second highest grade in the class, scoring 5/5 for meeting the brief
           and 5/5 for the stretch goal. Our lowest score was communication and presentation,
           with a 3/5.
         </p>

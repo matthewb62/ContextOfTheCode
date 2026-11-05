@@ -38,7 +38,7 @@ function Results() {
     <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <p className="text-lg font-semibold text-slate-800">2nd highest grade in the class</p>
-        <p className="text-sm text-slate-400">Final grade 72%</p>
+        <p className="text-sm font-medium text-slate-500">Grade A2 · 85% weighted rubric score</p>
       </div>
       <div className="mt-4 space-y-3">
         {RUBRIC.map(([label, score]) => (
