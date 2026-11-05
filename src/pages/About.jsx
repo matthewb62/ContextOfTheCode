@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import { Page, Section, Code, A, ORIGINAL_CODE_URL } from '../components/Prose'
+import { Page, Section, List, Code, A, ORIGINAL_CODE_URL } from '../components/Prose'
 
 const TEAM = 'Matthew Burke, Hugh Murtagh and Peter Kennedy'
 const STACK = ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'React', 'Recharts', 'nginx']
@@ -56,7 +55,7 @@ function Results() {
       </div>
       <p className="mt-4 text-xs text-slate-500">
         Our lowest score was the presentation, not the tech.{' '}
-        <Link to="/how-it-went" className="text-purple-600 hover:underline">More on that here.</Link>
+        <a href="#lessons" className="text-purple-600 hover:underline">More on that below.</a>
       </p>
     </div>
   )
@@ -147,6 +146,29 @@ export default function About() {
           ))}
         </div>
       </Section>
+
+      <section id="lessons" className="scroll-mt-6">
+        <h2 className="text-lg font-semibold text-slate-800 mb-3">Lessons learned</h2>
+        <div className="space-y-3 text-[15px] leading-relaxed text-slate-600">
+          <p>
+            Losing marks on the presentation was a tough one to take. The system was technically
+            sound and we knew every part of it inside out, but the presentation is how the work gets
+            judged, and we hadn't given it the same care as the code. The story and the demo deserve
+            as much planning and rehearsal as the engineering.
+          </p>
+          <List
+            items={[
+              'CORS cost us more time than anything else. The dashboard and APIs ran on different ports, and it took several rounds of fixes before it stayed fixed.',
+              <>
+                We first stamped data when it reached the server, so anything that sat in the queue
+                showed up at the wrong time. Setting <Code>recorded_at</Code> at measurement time fixed it.
+              </>,
+              'Integrate end to end early. Most of the painful bugs only showed up once every piece was running together.',
+              'Keep secrets in environment variables from day one, and commit small and often. A key ended up hardcoded, and a whole weekend of work once landed in a single commit.',
+            ]}
+          />
+        </div>
+      </section>
 
       <Section title="What's running here now">
         <p>
