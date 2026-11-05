@@ -63,6 +63,20 @@ export default function Retro() {
         />
       </Section>
 
+      <Section title="The presentation">
+        <p>
+          We finished with the second highest grade in the class, scoring 5/5 for meeting the brief
+          and 5/5 for the stretch goal. Our lowest score was communication and presentation,
+          with a 3/5.
+        </p>
+        <p>
+          That was a tough one to take. The system was technically sound and we knew every part of
+          it inside out. But the presentation is how the work gets judged, and we hadn't given it
+          the same care as the code. The lesson I took away: the story and the demo deserve as much
+          planning and rehearsal as the engineering.
+        </p>
+      </Section>
+
       <Section title="What I'd do differently">
         <List
           items={[
